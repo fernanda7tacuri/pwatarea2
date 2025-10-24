@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 1</title>
+  <style>
+    body {
+      background: #f3e5f5;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      padding: 40px;
+      color: #4a148c;
+    }
+    button {
+      background-color: #ba68c8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+    button:hover {
+      background-color: #9c27b0;
+    }
+  </style>
+</head>
+<body>
+  <h2>🎨 Ejercicio 1: Cambia el color de fondo</h2>
+  <button onclick="cambiarColor()">Cambiar color</button>
+
+  <script>
+    const colores = ["#f8bbd0", "#b2dfdb", "#c5cae9", "#ffe0b2"];
+    function cambiarColor() {
+      document.body.style.background = colores[Math.floor(Math.random() * colores.length)];
+    }
+  </script>
+</body>
+</html>

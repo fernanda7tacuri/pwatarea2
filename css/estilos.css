@@ -1,0 +1,425 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(135deg, #e4d0f7, #c8e8f4);
+  color: #333;
+}
+
+header {
+  background-color: #dcd6f7;
+  padding: 20px;
+  border-bottom: 3px solid #a3bffa;
+}
+
+h1 {
+  color: #5b4b8a;
+}
+
+.menu .botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px;
+}
+
+.btn {
+  background-color: #c3b1e1;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #a987d6;
+  transform: scale(1.05);
+}
+
+.btn-volver {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #b3e5fc;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.btn-volver:hover {
+  background-color: #81d4fa;
+}
+
+main p {
+  font-size: 1.3em;
+  margin-top: 40px;
+  background-color: lavenderblush;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #a987d6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #8f6ec3;
+}
+.calculadora {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #e0d7f7; /* tono pastel violeta */
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.calculadora input {
+  width: 100%;
+  height: 40px;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  padding: 5px;
+  text-align: right;
+  border-radius: 8px;
+  border: 1px solid #a3bffa;
+}
+
+.botones-calculadora {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.botones-calculadora button {
+  height: 50px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #c3b1e1;
+  color: white;
+  transition: 0.3s;
+}
+
+.botones-calculadora button:hover {
+  background-color: #a987d6;
+  transform: scale(1.05);
+}
+.ej3 .imagen-container {
+  margin-top: 40px;
+}
+
+.ej3 img {
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.ej3 img:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
+}
+/* ======= Ejercicio 4: Reloj Analógico ======= */
+.ej4 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.reloj {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border: 8px solid #b2a4ff;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #dcd6ff, #f0f0ff);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.manecilla {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  border-radius: 5px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hora {
+  width: 6px;
+  height: 55px;
+  background-color: #6b5bff;
+}
+
+.minuto {
+  width: 4px;
+  height: 75px;
+  background-color: #9370ff;
+}
+
+.segundo {
+  width: 2px;
+  height: 90px;
+  background-color: #d580ff;
+}
+
+.centro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #6b5bff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Ejercicio 5 - Calculadora */
+/* Ejercicio 5 - Validación de formulario */
+.fondo-violeta-pastel {
+  background: linear-gradient(135deg, #e2d9f3, #d0e1ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contenedor-formulario {
+  background: #ffffffcc;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 320px;
+  text-align: center;
+}
+
+.contenedor-formulario h2 {
+  color: #6a5acd;
+  margin-bottom: 15px;
+}
+
+.contenedor-formulario label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contenedor-formulario input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.contenedor-formulario button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #a7a0f5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contenedor-formulario button:hover {
+  background-color: #9189e9;
+}
+
+#mensaje {
+  margin-top: 15px;
+  font-weight: bold;
+}
+/* Ejercicio 6 - Lista de tareas */
+.fondo-azulvioleta-pastel {
+  background: linear-gradient(135deg, #d6e0ff, #e9ddff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contenedor-tareas {
+  background: #ffffffcc;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 340px;
+  text-align: center;
+}
+
+.contenedor-tareas h2 {
+  color: #6156e8;
+  margin-bottom: 15px;
+}
+
+.agregar-tarea {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.agregar-tarea input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.agregar-tarea button {
+  background-color: #a79dfc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.agregar-tarea button:hover {
+  background-color: #8d84eb;
+}
+
+#listaTareas {
+  list-style: none;
+  padding: 0;
+}
+
+#listaTareas li {
+  background-color: #f4f3ff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #444;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.btn-eliminar {
+  background-color: #ff8b8b;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 5px 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-eliminar:hover {
+  background-color: #e97070;
+}
+/* ======= Ejercicio 7 - Menú Desplegable ======= */
+.ej7 main {
+  margin-top: 40px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  position: relative;
+}
+
+.sub-menu {
+  display: none;
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.sub-menu li a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #c3b1e1;
+  color: white;
+  border-radius: 8px;
+  margin: 5px auto;
+  width: 200px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sub-menu li a:hover {
+  background-color: #a987d6;
+}
+/* ======= Ejercicio 8 - Carrusel ======= */
+.ej8 .carrusel-container {
+  margin-top: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.carrusel-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.carrusel-buttons button {
+  padding: 10px 20px;
+  background-color: #a987d6;
+  color: white;
+  border-radius: 8px;
+}
+
+.carrusel-buttons button:hover {
+  background-color: #8f6ec3;
+}
+/* ======= Ejercicio 9 - Temporizador ======= */
+.ej9 .temporizador {
+  margin-top: 60px;
+}
+
+.ej9 #timer {
+  font-size: 3em;
+  color: #5b4b8a;
+  background-color: #e0d7f7;
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+/* ======= Ejercicio 10 - Quiz ======= */
+.ej10 .quiz-container {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #e0d7f7;
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.ej10 label {
+  display: block;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.ej10 input[type="radio"] {
+  margin-right: 8px;
+}
